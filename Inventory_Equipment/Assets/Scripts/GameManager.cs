@@ -5,11 +5,13 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public GameObject player;
+    public ItemContainer inventoryContainer;
+    public ItemDragAndDropController dragAndDropController;
 
-    private void Awake()
+    public void Awake()
     {
         instance = this;
     }
 
-    public ItemContainer inventoryContainer;
 }
